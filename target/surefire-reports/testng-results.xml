@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-29T17:12:15 IST" name="Surefire suite" finished-at="2026-06-29T17:12:59 IST" duration-ms="44465">
+    <groups>
+      <group name="sanity">
+        <method signature="AdminTests.tc13DeactivateStudentProfile(java.util.Map)[pri:0, instance:com.mentormatch.automation.tests.AdminTests@71529963]" name="tc13DeactivateStudentProfile" class="com.mentormatch.automation.tests.AdminTests"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2026-06-29T17:12:15 IST" name="Surefire test" finished-at="2026-06-29T17:12:59 IST" duration-ms="44465">
+      <class name="com.mentormatch.automation.tests.AdminTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mentormatch.automation.tests.AdminTests@71529963]" started-at="2026-06-29T17:12:17 IST" name="setUp" finished-at="2026-06-29T17:12:26 IST" duration-ms="9209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tc13DeactivateStudentProfile(java.util.Map)[pri:0, instance:com.mentormatch.automation.tests.AdminTests@71529963]" started-at="2026-06-29T17:12:26 IST" name="tc13DeactivateStudentProfile" data-provider="singleCase" finished-at="2026-06-29T17:12:53 IST" duration-ms="26838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=, password=Student@1234, fullName=Automation User, role=STUDENT, topic=MentorMatch Session 273e70d1, message=Automation booking request, reason=Automation validation reason, meetingLink=https://meet.google.com/20ad514f, rating=5, comment=Helpful mentoring session., expectedMessage=, testCaseId=TC13}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc13DeactivateStudentProfile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.mentormatch.automation.tests.AdminTests@71529963]" started-at="2026-06-29T17:12:53 IST" name="tearDown" finished-at="2026-06-29T17:12:59 IST" duration-ms="6345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc13DeactivateStudentProfile status=SUCCESS method=AdminTests.tc13DeactivateStudentProfile(java.util.Map)[pri:0, instance:com.mentormatch.automation.tests.AdminTests@71529963] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mentormatch.automation.tests.AdminTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

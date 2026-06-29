@@ -1,0 +1,14 @@
+testCaseId,description,email,password,fullName,role,topic,rating,comment,expectedMessage
+TC01,Register valid student,,Student@1234,Automation Student,STUDENT,,,,
+TC02,Register valid mentor,,Mentor@1234,Automation Mentor,MENTOR,,,,
+TC03,Login valid user,student@mentormatch.com,Student@1234,,,,,,
+TC04,Login invalid email,abc@,Pass123,,,,,,Enter a valid email
+TC05,Login invalid password,student@mentormatch.com,Wrong123,,,,,,Login failed
+TC06,Login empty fields,,,,,,,,Email is required
+TC07,Register invalid email,abc@,Student@1234,Invalid Email Student,STUDENT,,,,Enter a valid email
+TC08,Register short password,,123,Short Password Student,STUDENT,,,,Minimum 6 characters
+TC09,Register empty form,,,,,,,,Full name is required
+TC31,Session booking valid,,,,,,Automation Valid Booking,,,
+TC41,Review submission valid,,,,,,,5,Great mentor session,Review submitted successfully
+TC45,Review with comment,,,,,,,5,Clear and helpful mentoring,Review submitted successfully
+TC46,Review without comment,,,,,,,4,,Review submitted successfully

@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MentorMatch Smoke Suite" verbose="1" parallel="false">
+    <listeners>
+        <listener class-name="com.mentormatch.automation.listeners.TestListener"/>
+        <listener class-name="com.mentormatch.automation.listeners.RetryAnnotationTransformer"/>
+    </listeners>
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.mentormatch.automation.tests.AuthTests"/>
+            <class name="com.mentormatch.automation.tests.DashboardTests"/>
+            <class name="com.mentormatch.automation.tests.ProfileTests"/>
+            <class name="com.mentormatch.automation.tests.MentorTests"/>
+            <class name="com.mentormatch.automation.tests.SessionTests"/>
+            <class name="com.mentormatch.automation.tests.NotificationTests"/>
+            <class name="com.mentormatch.automation.tests.ReviewTests"/>
+            <class name="com.mentormatch.automation.tests.AdminTests"/>
+        </classes>
+    </test>
+</suite>
