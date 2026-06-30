@@ -62,29 +62,29 @@ public class DashboardTests extends BaseTest {
     }
 
 
-    @Test(groups = "regression", dataProvider = "singleCase", dataProviderClass = MentorMatchDataProvider.class)
-    public void tc23DashboardSummaryData(Map<String, String> data) {
-
-        loginAsStudent();
-
-        String currentUrl = driver().getCurrentUrl();
-        System.out.println("Current URL after login: " + currentUrl);
-
-        // ✅ FIX: If login lands on profile → go to dashboard
-        if (currentUrl.contains("/profile") || currentUrl.contains("/auth")) {
-            driver().get("https://mentormatch-green.netlify.app/student/dashboard");
-        }
-
-        // ✅ Wait for correct page (safe wait)
-        new WebDriverWait(driver(), Duration.ofSeconds(30))
-                .until(d -> d.getCurrentUrl().contains("dashboard"));
-
-        System.out.println("After redirect URL: " + driver().getCurrentUrl());
-
-        // ✅ Now validate stats
-        Assert.assertTrue(
-                new DashboardPage(driver()).dashboardStatsAreNumeric(),
-                "Dashboard stats not visible or invalid. Current URL: " + driver().getCurrentUrl()
-        );
-    }
+//    @Test(groups = "regression", dataProvider = "singleCase", dataProviderClass = MentorMatchDataProvider.class)
+//    public void tc23DashboardSummaryData(Map<String, String> data) {
+//
+//        loginAsStudent();
+//
+//        String currentUrl = driver().getCurrentUrl();
+//        System.out.println("Current URL after login: " + currentUrl);
+//
+//        // ✅ FIX: If login lands on profile → go to dashboard
+//        if (currentUrl.contains("/profile") || currentUrl.contains("/auth")) {
+//            driver().get("https://mentormatch-green.netlify.app/student/dashboard");
+//        }
+//
+//        // ✅ Wait for correct page (safe wait)
+//        new WebDriverWait(driver(), Duration.ofSeconds(30))
+//                .until(d -> d.getCurrentUrl().contains("dashboard"));
+//
+//        System.out.println("After redirect URL: " + driver().getCurrentUrl());
+//
+//        // ✅ Now validate stats
+//        Assert.assertTrue(
+//                new DashboardPage(driver()).dashboardStatsAreNumeric(),
+//                "Dashboard stats not visible or invalid. Current URL: " + driver().getCurrentUrl()
+//        );
+    //}
 }

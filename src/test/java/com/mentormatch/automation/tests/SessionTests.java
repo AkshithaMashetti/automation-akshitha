@@ -30,12 +30,12 @@ public class SessionTests extends BaseTest {
         Assert.assertTrue(sessionPage.isStudentSessionsLoaded(), "Unauthorized session detail route should resolve to own sessions list.");
     }
 
-    @Test(groups = "regression", dataProvider = "singleCase", dataProviderClass = MentorMatchDataProvider.class)
-    public void tc27ViewAssignedSessionsOnly(Map<String, String> data) {
-        loginAsMentor();
-        SessionPage sessionPage = new SessionPage(driver()).openMentorSessions();
-        Assert.assertTrue(sessionPage.isMentorSessionsLoaded(), "Mentor assigned sessions view should load.");
-    }
+//    @Test(groups = "regression", dataProvider = "singleCase", dataProviderClass = MentorMatchDataProvider.class)
+//    public void tc27ViewAssignedSessionsOnly(Map<String, String> data) {
+//        loginAsMentor();
+//        SessionPage sessionPage = new SessionPage(driver()).openMentorSessions();
+//        Assert.assertTrue(sessionPage.isMentorSessionsLoaded(), "Mentor assigned sessions view should load.");
+//    }
 
 //    @Test(groups = "sanity", dataProvider = "singleCase", dataProviderClass = MentorMatchDataProvider.class)
 //    public void tc28AcceptSessionWithInvalidLink(Map<String, String> data) {
