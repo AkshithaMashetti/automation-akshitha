@@ -55,16 +55,30 @@ public abstract class BaseTest {
     }
 
     @AfterMethod(alwaysRun = true)
+//    public void tearDown(ITestResult result) {
+//        WebDriver driver = DRIVER.get();
+//        if (driver != null) {
+//            if (result.isSuccess() && ConfigReader.getBoolean("screenshotOnSuccess", false)) {
+//                ScreenshotUtils.capture(driver, result.getMethod().getMethodName() + "_success");
+//            }
+//            driver.quit();
+//            DRIVER.remove();
+//        }
+//    }
     public void tearDown(ITestResult result) {
         WebDriver driver = DRIVER.get();
         if (driver != null) {
-            if (result.isSuccess() && ConfigReader.getBoolean("screenshotOnSuccess", false)) {
+            if (!result.isSuccess()) {
+                String path = ScreenshotUtils.capture(driver, result.getMethod().getMethodName() + "_failed");
+                LOGGER.error("Screenshot saved for failed test {}: {}", result.getMethod().getMethodName(), path);
+            } else if (ConfigReader.getBoolean("screenshotOnSuccess", false)) {
                 ScreenshotUtils.capture(driver, result.getMethod().getMethodName() + "_success");
             }
             driver.quit();
             DRIVER.remove();
         }
     }
+
 
     protected void loginAsStudent() {
         new LoginPage(driver()).open()
