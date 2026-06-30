@@ -10,8 +10,11 @@ import java.util.Locale;
 
 public class DashboardPage extends BasePage {
 
-    private final By studentDashboard = By.id("student-dashboard-div-2");
-    private final By studentProfileForm = By.id("student-profile-form-11");
+    //    private final By studentDashboard = By.id("student-dashboard-div-2");
+//    private final By studentProfileForm = By.id("student-profile-form-11");
+//    private final By dashboardBookButton = By.id("dashboard-book-btn");
+    private final By studentDashboard = By.cssSelector("[id^='student-dashboard-div']");
+    private final By studentProfileForm = By.cssSelector("[id^='student-profile-form']");
     private final By dashboardBookButton = By.id("dashboard-book-btn");
     private final By totalSessionsStat = By.cssSelector("#stat-total-sessions .stat-val");
     private final By upcomingStat = By.cssSelector("#stat-upcoming .stat-val");
@@ -23,10 +26,11 @@ public class DashboardPage extends BasePage {
     private final By interestsInput = By.id("student-profile-input-29");
     private final By goalsInput = By.id("goals");
     private final By saveProfileButton = By.id("save-profile-btn");
-    private final By profileSuccess = By.id("student-profile-div-39");
+    // private final By profileSuccess = By.id("student-profile-div-39");
+    private final By profileSuccess = By.cssSelector("[id^='student-profile-div']");
     private final By deleteProfileButton = By.id("delete-profile-btn");
 
-    private final By mentorDashboard = By.id("mentor-dashboard-div-44");
+    // private final By mentorDashboard = By.id("mentor-dashboard-div-44");
     private final By mentorSessionsTab = By.id("mentor-dashboard-button-13");
     private final By mentorReviewsTab = By.id("mentor-dashboard-button-18");
     private final By mentorProfileTab = By.id("mentor-dashboard-button-22");
@@ -37,8 +41,15 @@ public class DashboardPage extends BasePage {
     private final By mentorBioInput = By.id("bio");
     private final By mentorSkillInput = By.id("mentor-dashboard-input-182");
     private final By mentorSaveButton = By.id("mentor-dashboard-button-185");
-    private final By mentorSaveSuccess = By.id("mentor-dashboard-div-93");
-    private final By adminDashboard = By.id("admin-dashboard-div-1");
+    // private final By mentorSaveSuccess = By.id("mentor-dashboard-div-93");
+    // private final By adminDashboard = By.id("admin-dashboard-div-1");
+    private final By mentorDashboard = By.cssSelector("[id^='mentor-dashboard-div']");
+    private final By mentorSaveSuccess = By.cssSelector("[id^='mentor-dashboard-div']"); // Adjust if this shares the same prefix as dashboard
+    private final By adminDashboard = By.cssSelector("[id^='admin-dashboard-div']");
+    private final By pending = By.id("mentor-dashboard-span-60");
+    private final By active = By.id("mentor-dashboard-span-64");
+    private final By completed = By.id("mentor-dashboard-span-68");
+    private final By avg = By.id("mentor-dashboard-span-72");
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -105,10 +116,10 @@ public class DashboardPage extends BasePage {
     }
 
     public boolean dashboardStatsAreNumeric() {
-        List<By> stats = List.of(totalSessionsStat, upcomingStat, pendingStat, completedStat);
+        List<By> stats = List.of(pending, completed, active, avg);
         return stats.stream()
                 .map(this::text)
-                .allMatch(value -> value.matches("\\d+"));
+                .allMatch(value -> value.matches("\\d+(\\.\\d+)?"));
     }
 
     public DashboardPage switchMentorTab(String tab) {

@@ -13,18 +13,25 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <suiteXmlFile>testng.xml</suiteXmlFile>
-        <selenium.version>4.22.0</selenium.version>
+        <selenium.version>4.25.0</selenium.version>
         <testng.version>7.10.2</testng.version>
         <poi.version>5.2.5</poi.version>
         <log4j.version>2.23.1</log4j.version>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
+            <version>4.25.0</version> <!-- or latest available -->
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-java</artifactId>-->
+<!--            <version>${selenium.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>

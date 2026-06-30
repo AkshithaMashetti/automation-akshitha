@@ -85,9 +85,25 @@ public abstract class BaseTest {
     }
 
     protected void clearSession() {
-        driver().manage().deleteAllCookies();
-        ((JavascriptExecutor) driver()).executeScript("window.localStorage.clear(); window.sessionStorage.clear();");
+        try {
+            // ✅ Navigate to valid page first
+            driver().get("https://mentormatch-green.netlify.app");
+
+            JavascriptExecutor js = (JavascriptExecutor) driver();
+            js.executeScript("window.localStorage.clear();");
+            js.executeScript("window.sessionStorage.clear();");
+
+        } catch (Exception e) {
+            System.out.println("Storage clear skipped: " + e.getMessage());
+        }
+
+        try {
+            driver().manage().deleteAllCookies();
+        } catch (Exception e) {
+            System.out.println("Cookie clear failed: " + e.getMessage());
+        }
     }
+
 
     protected String value(Map<String, String> data, String key, String fallback) {
         String value = data.get(key);
@@ -174,25 +190,53 @@ public abstract class BaseTest {
         boolean headless = ConfigReader.getBoolean("headless", false);
 
         return switch (browser) {
+
             case "edge" -> {
                 EdgeOptions options = new EdgeOptions();
                 options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+
                 if (headless) {
                     options.addArguments("--headless=new");
                 }
-                options.addArguments("--disable-notifications", "--remote-allow-origins=*");
+
+                options.addArguments(
+                        "--disable-notifications",
+                        "--disable-features=PasswordLeakDetection",
+                        "--remote-allow-origins=*"
+                );
+
                 yield new EdgeDriver(options);
             }
+
             case "chrome" -> {
                 ChromeOptions options = new ChromeOptions();
                 options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+
                 if (headless) {
                     options.addArguments("--headless=new");
                 }
-                options.addArguments("--disable-notifications", "--remote-allow-origins=*");
+
+                // ✅ ✅ IMPORTANT: Disable password manager & breach popup
+                java.util.Map<String, Object> prefs = new java.util.HashMap<>();
+                prefs.put("credentials_enable_service", false);
+                prefs.put("profile.password_manager_enabled", false);
+                prefs.put("profile.password_manager_leak_detection", false);
+
+                options.setExperimentalOption("prefs", prefs);
+
+                options.addArguments(
+                        "--disable-notifications",
+                        "--disable-infobars",
+                        "--disable-extensions",
+                        "--disable-features=PasswordLeakDetection",
+                        "--remote-allow-origins=*"
+                );
+
                 yield new ChromeDriver(options);
             }
+
             default -> throw new IllegalArgumentException("Unsupported browser: " + browser);
         };
     }
+
 }

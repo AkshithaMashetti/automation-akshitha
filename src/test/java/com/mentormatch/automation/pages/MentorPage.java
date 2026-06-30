@@ -8,6 +8,22 @@ import org.openqa.selenium.support.ui.Select;
 
 public class MentorPage extends BasePage {
 
+
+
+    private final By editProfile = By.id("mentor-dashboard-span-24");
+
+    private final By mentorName = By.id("mentor-dashboard-p-195");
+    private final By mentorIndustryInput = By.id("industry");
+    private final By mentorHourlyRateInput = By.id("hourlyRate");
+    private final By mentorBioInput = By.id("bio");
+    private final By mentorSkillInput = By.id("mentor-dashboard-input-182");
+    private final By mentorSaveButton = By.id("mentor-dashboard-button-185");
+    private final By mentorSaveSuccess = By.id("mentor-dashboard-div-93");
+    private final By mentorAvailable = By.id("mentor-dashboard-button-54");
+    private final By mentorAvailableText = By.id("mentor-dashboard-button-56");
+    private final By sessionPage = By.id("mentor-dashboard-span-15");
+    private final By sessionRequest = By.id("mentor-dashboard-h2-97");
+    private final By accept = By.id("accept-session-btn-54");
     private final By mentorListPage = By.id("browse-mentors-div-2");
     private final By mentorCards = By.cssSelector(".mentor-card");
     private final By emptyMentorState = By.id("browse-mentors-div-44");
@@ -42,6 +58,15 @@ public class MentorPage extends BasePage {
 
     public boolean isMentorListLoaded() {
         return isDisplayed(mentorListPage) && (isPresent(mentorCards) || isDisplayed(emptyMentorState));
+    }
+    public MentorPage openProfile() {
+        wait.visible(editProfile);
+        click(editProfile);
+        //wait.visible(detailPage);
+        return this;
+    }
+    public String mentorName1() {
+        return text(mentorName);
     }
 
     public int mentorCount() {
@@ -126,5 +151,29 @@ public class MentorPage extends BasePage {
         return !wait.visible(bookingSubmitButton).isEnabled()
                 || hasBookingValidationError("future")
                 || hasBookingValidationError("date");
+    }
+    public void updateMentorProfile(String industry, String hourlyRate, String bio, String skill) {
+        wait.visible(mentorIndustryInput);
+        type(mentorIndustryInput, industry);
+        type(mentorHourlyRateInput, hourlyRate);
+        type(mentorBioInput, bio);
+        if (skill != null && !skill.isBlank()) {
+            type(mentorSkillInput, skill);
+            driver.switchTo().activeElement().sendKeys(",");
+        }
+        click(mentorSaveButton);
+        wait.isVisible(mentorSaveSuccess, 3);
+    }
+    public boolean mentorProfileSaved() {
+        return isDisplayed(mentorSaveSuccess);
+    }
+    public MentorPage openSessionPage()
+    {
+        click(sessionPage);
+        return this;
+    }
+    public boolean isMentorSessionsLoaded()
+    {
+        return text(sessionRequest).equalsIgnoreCase("\uD83D\uDCCB Session Requests");
     }
 }

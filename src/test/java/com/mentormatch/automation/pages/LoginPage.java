@@ -3,7 +3,12 @@ package com.mentormatch.automation.pages;
 import com.mentormatch.automation.base.BasePage;
 import com.mentormatch.automation.utils.ConfigReader;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class LoginPage extends BasePage {
 
@@ -60,7 +65,16 @@ public class LoginPage extends BasePage {
     }
 
     public boolean hasServerError() {
-        return isDisplayed(serverError) && !serverErrorText().isBlank();
+        try {
+            // Wait up to 5 seconds for the error to appear in the DOM and be visible
+            WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            explicitWait.until(ExpectedConditions.visibilityOfElementLocated(serverError));
+
+            return !serverErrorText().isBlank();
+        } catch (TimeoutException e) {
+            // If 5 seconds pass and it's still not there, it truly failed
+            return false;
+        }
     }
 
     public boolean isAtLoginPage() {
