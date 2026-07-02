@@ -6,3 +6,222 @@
 2026-06-30 09:23:49 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc55MaximumFullNameLength: C:\Users\2492366\Downloads\automation-tests\MentorMatch_testAutomation\screenshots\tc55MaximumFullNameLength_failed_20260630_092349_798.png
 2026-06-30 09:25:43 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc23DashboardSummaryData: C:\Users\2492366\Downloads\automation-tests\MentorMatch_testAutomation\screenshots\tc23DashboardSummaryData_failed_20260630_092543_121.png
 2026-06-30 09:26:40 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc25UpdateMentorProfile: C:\Users\2492366\Downloads\automation-tests\MentorMatch_testAutomation\screenshots\tc25UpdateMentorProfile_failed_20260630_092640_134.png
+2026-06-30 09:47:55 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc01RegisterValidStudent
+2026-06-30 09:48:09 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc02RegisterValidMentor
+2026-06-30 09:48:38 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc03LoginValidUser. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc03LoginValidUser_20260630_094838_151.png
+2026-06-30 09:48:38 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc03LoginValidUser: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc03LoginValidUser_failed_20260630_094838_281.png
+2026-06-30 09:48:57 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc10StudentDashboardDisplay
+2026-06-30 09:49:15 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc11StudentLoginRedirection
+2026-06-30 09:49:24 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc52EmailFieldEmptyValidation
+2026-06-30 09:49:31 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc53PasswordFieldEmptyValidation
+2026-06-30 09:49:44 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc54MaximumPasswordLength
+2026-06-30 09:49:55 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc55MaximumFullNameLength. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_20260630_094955_101.png
+2026-06-30 09:49:55 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc55MaximumFullNameLength: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_failed_20260630_094955_411.png
+2026-06-30 09:50:05 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc56UniqueEmailValidation
+2026-06-30 09:50:40 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc12DeleteStudentProfile
+2026-06-30 09:51:00 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc25UpdateMentorProfile. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_20260630_095059_655.png
+2026-06-30 09:51:00 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc25UpdateMentorProfile: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_failed_20260630_095100_036.png
+2026-06-30 09:51:21 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc19RestrictOtherSessions
+2026-06-30 09:51:30 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc13DeactivateStudentProfile. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [209906190e7c3cf828188ca089e5e876, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64842}, goog:processID: 9196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64842/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209906190e7c3cf828188ca089e5e876
+2026-06-30 09:51:30 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc13DeactivateStudentProfile: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [209906190e7c3cf828188ca089e5e876, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64842}, goog:processID: 9196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64842/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 209906190e7c3cf828188ca089e5e876
+2026-06-30 09:51:55 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc04LoginInvalidEmail. Screenshot: Screenshot capture failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.103)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b32c79e3415cccfdca471e6ce4a189d5, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62359}, goog:processID: 32216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62359/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b32c79e3415cccfdca471e6ce4a189d5
+2026-06-30 09:51:55 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc04LoginInvalidEmail: Screenshot capture failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.103)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b32c79e3415cccfdca471e6ce4a189d5, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62359}, goog:processID: 32216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62359/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b32c79e3415cccfdca471e6ce4a189d5
+2026-06-30 09:52:07 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc05LoginInvalidPassword
+2026-06-30 09:52:15 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc06LoginEmptyFields
+2026-06-30 09:52:26 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc07RegisterInvalidEmail
+2026-06-30 09:52:38 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc08RegisterShortPassword
+2026-06-30 09:52:50 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc09RegisterEmptyForm
+2026-06-30 09:53:10 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc15NavigateMentorList. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d412e56bec1efc6c2de54811ddd6e18c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57451}, goog:processID: 8660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57451/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d412e56bec1efc6c2de54811ddd6e18c
+2026-06-30 09:53:10 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc15NavigateMentorList: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d412e56bec1efc6c2de54811ddd6e18c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57451}, goog:processID: 8660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57451/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d412e56bec1efc6c2de54811ddd6e18c
+2026-06-30 09:53:17 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc23DashboardSummaryData. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1e493fc8edacc3c731f89bd20a51756, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57992}, goog:processID: 17432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57992/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1e493fc8edacc3c731f89bd20a51756
+2026-06-30 09:53:17 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc23DashboardSummaryData: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e1e493fc8edacc3c731f89bd20a51756, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57992}, goog:processID: 17432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57992/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1e493fc8edacc3c731f89bd20a51756
+2026-06-30 09:53:24 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc24ViewMentorProfile. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bc6bbe8c872f77ae397f36a005da135, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62142}, goog:processID: 2864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62142/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bc6bbe8c872f77ae397f36a005da135
+2026-06-30 09:53:24 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc24ViewMentorProfile: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8bc6bbe8c872f77ae397f36a005da135, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62142}, goog:processID: 2864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62142/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8bc6bbe8c872f77ae397f36a005da135
+2026-07-01 11:18:42 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc01RegisterValidStudent
+2026-07-01 11:18:55 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc02RegisterValidMentor
+2026-07-01 11:19:16 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc03LoginValidUser
+2026-07-01 11:25:51 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc01RegisterValidStudent
+2026-07-01 11:28:48 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc01RegisterValidStudent
+2026-07-01 11:28:48 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc02RegisterValidMentor
+2026-07-01 11:28:52 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc10StudentDashboardDisplay
+2026-07-01 11:28:52 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc11StudentLoginRedirection
+2026-07-01 11:28:56 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc03LoginValidUser
+2026-07-01 11:29:09 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc52EmailFieldEmptyValidation
+2026-07-01 11:29:10 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc53PasswordFieldEmptyValidation
+2026-07-01 11:29:13 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc56UniqueEmailValidation
+2026-07-01 11:29:14 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc54MaximumPasswordLength. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc54MaximumPasswordLength_20260701_112914_272.png
+2026-07-01 11:29:14 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc55MaximumFullNameLength. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_20260701_112914_280.png
+2026-07-01 11:29:14 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc54MaximumPasswordLength: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc54MaximumPasswordLength_failed_20260701_112914_501.png
+2026-07-01 11:29:14 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc55MaximumFullNameLength: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_failed_20260701_112914_503.png
+2026-07-01 11:29:34 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc25UpdateMentorProfile. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_20260701_112934_289.png
+2026-07-01 11:29:34 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc25UpdateMentorProfile: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_failed_20260701_112934_502.png
+2026-07-01 11:29:38 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc19RestrictOtherSessions
+2026-07-01 11:29:45 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc13DeactivateStudentProfile
+2026-07-01 11:29:47 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc12DeleteStudentProfile
+2026-07-01 11:30:01 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc06LoginEmptyFields
+2026-07-01 11:30:02 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc04LoginInvalidEmail
+2026-07-01 11:30:03 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc05LoginInvalidPassword
+2026-07-01 11:30:05 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc08RegisterShortPassword
+2026-07-01 11:30:05 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc07RegisterInvalidEmail
+2026-07-01 11:30:15 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc09RegisterEmptyForm
+2026-07-01 11:30:24 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc24ViewMentorProfile
+2026-07-01 11:30:27 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc15NavigateMentorList
+2026-07-01 11:30:28 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc27ViewAssignedSessionsOnly
+2026-07-01 11:30:30 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc23DashboardSummaryData
+2026-07-01 11:30:47 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-01 11:30:51 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc18ViewOwnSessionList
+2026-07-01 11:30:55 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc20ViewNotifications
+2026-07-01 11:30:57 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc21ReadUnreadNotifications
+2026-07-01 11:31:07 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc42ReviewSubmissionBlock
+2026-07-01 11:32:43 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc02RegisterValidMentor
+2026-07-01 11:42:04 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc06LoginEmptyFields
+2026-07-01 11:42:05 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc04LoginInvalidEmail
+2026-07-01 11:42:07 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc05LoginInvalidPassword
+2026-07-01 11:42:07 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc09RegisterEmptyForm
+2026-07-01 11:42:08 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc08RegisterShortPassword
+2026-07-01 11:42:09 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc07RegisterInvalidEmail
+2026-07-01 11:42:27 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc24ViewMentorProfile
+2026-07-01 11:42:29 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc27ViewAssignedSessionsOnly
+2026-07-01 11:42:34 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc15NavigateMentorList
+2026-07-01 11:42:36 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc23DashboardSummaryData
+2026-07-01 11:42:42 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc20ViewNotifications
+2026-07-01 11:42:49 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc18ViewOwnSessionList
+2026-07-01 11:42:55 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-01 11:42:59 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc21ReadUnreadNotifications
+2026-07-01 11:43:14 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc42ReviewSubmissionBlock
+2026-07-01 12:03:54 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-01 12:04:13 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc42ReviewSubmissionBlock
+2026-07-01 12:05:16 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-01 12:05:21 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc42ReviewSubmissionBlock. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [372b03ee552d039623cd2c66a01b87c4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50919}, goog:processID: 32480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50919/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 372b03ee552d039623cd2c66a01b87c4
+2026-07-01 12:05:21 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc42ReviewSubmissionBlock: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [372b03ee552d039623cd2c66a01b87c4, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50919}, goog:processID: 32480, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50919/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 372b03ee552d039623cd2c66a01b87c4
+2026-07-01 12:06:15 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-01 12:06:25 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc42ReviewSubmissionBlock. Screenshot: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [defe7aa1ac978e47146fff586a6505b7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61806}, goog:processID: 12632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61806/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: defe7aa1ac978e47146fff586a6505b7
+2026-07-01 12:06:25 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc42ReviewSubmissionBlock: Screenshot capture failed: invalid session id
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [defe7aa1ac978e47146fff586a6505b7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492352\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61806}, goog:processID: 12632, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61806/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: defe7aa1ac978e47146fff586a6505b7
+2026-07-02 19:37:08 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc30ViewOwnReviewsOnly. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc30ViewOwnReviewsOnly_20260702_193708_676.png
+2026-07-02 19:37:08 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc30ViewOwnReviewsOnly: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc30ViewOwnReviewsOnly_failed_20260702_193708_867.png
+2026-07-02 19:37:50 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc42ReviewSubmissionBlock. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc42ReviewSubmissionBlock_20260702_193750_036.png
+2026-07-02 19:37:50 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc42ReviewSubmissionBlock: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc42ReviewSubmissionBlock_failed_20260702_193750_208.png
+2026-07-02 19:40:08 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc02RegisterValidMentor. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc02RegisterValidMentor_20260702_194007_843.png
+2026-07-02 19:40:08 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc01RegisterValidStudent. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc01RegisterValidStudent_20260702_194007_843.png
+2026-07-02 19:40:08 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc02RegisterValidMentor: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc02RegisterValidMentor_failed_20260702_194008_270.png
+2026-07-02 19:40:08 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc01RegisterValidStudent: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc01RegisterValidStudent_failed_20260702_194008_270.png
+2026-07-02 19:40:09 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc11StudentLoginRedirection. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc11StudentLoginRedirection_20260702_194009_235.png
+2026-07-02 19:40:09 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc11StudentLoginRedirection: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc11StudentLoginRedirection_failed_20260702_194009_409.png
+2026-07-02 19:40:15 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc03LoginValidUser. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc03LoginValidUser_20260702_194015_384.png
+2026-07-02 19:40:15 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc03LoginValidUser: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc03LoginValidUser_failed_20260702_194015_501.png
+2026-07-02 19:40:26 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc10StudentDashboardDisplay
+2026-07-02 19:40:40 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc52EmailFieldEmptyValidation
+2026-07-02 19:40:40 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc53PasswordFieldEmptyValidation
+2026-07-02 19:40:44 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc56UniqueEmailValidation
+2026-07-02 19:40:45 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc54MaximumPasswordLength. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc54MaximumPasswordLength_20260702_194045_804.png
+2026-07-02 19:40:46 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc54MaximumPasswordLength: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc54MaximumPasswordLength_failed_20260702_194045_990.png
+2026-07-02 19:40:46 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc55MaximumFullNameLength. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_20260702_194046_221.png
+2026-07-02 19:40:46 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc55MaximumFullNameLength: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc55MaximumFullNameLength_failed_20260702_194046_358.png
+2026-07-02 19:41:07 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc19RestrictOtherSessions
+2026-07-02 19:41:09 ERROR com.mentormatch.automation.listeners.TestListener - Test failed: tc25UpdateMentorProfile. Screenshot: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_20260702_194109_805.png
+2026-07-02 19:41:10 ERROR com.mentormatch.automation.base.BaseTest - Screenshot saved for failed test tc25UpdateMentorProfile: C:\Users\2492352\IdeaProjects\automation-akshitha\screenshots\tc25UpdateMentorProfile_failed_20260702_194109_987.png
+2026-07-02 19:41:18 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc13DeactivateStudentProfile
+2026-07-02 19:41:20 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc12DeleteStudentProfile
+2026-07-02 19:41:33 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc06LoginEmptyFields
+2026-07-02 19:41:36 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc04LoginInvalidEmail
+2026-07-02 19:41:36 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc05LoginInvalidPassword
+2026-07-02 19:41:39 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc07RegisterInvalidEmail
+2026-07-02 19:41:40 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc08RegisterShortPassword
+2026-07-02 19:41:50 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc09RegisterEmptyForm
+2026-07-02 19:41:58 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc24ViewMentorProfile
+2026-07-02 19:41:58 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc27ViewAssignedSessionsOnly
+2026-07-02 19:42:01 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc15NavigateMentorList
+2026-07-02 19:42:04 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc23DashboardSummaryData
+2026-07-02 19:42:22 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc30ViewOwnReviewsOnly
+2026-07-02 19:42:26 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc20ViewNotifications
+2026-07-02 19:42:27 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc21ReadUnreadNotifications
+2026-07-02 19:42:30 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc18ViewOwnSessionList
+2026-07-02 19:42:42 INFO  com.mentormatch.automation.listeners.TestListener - Test passed: tc42ReviewSubmissionBlock
